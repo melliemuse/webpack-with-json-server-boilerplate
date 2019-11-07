@@ -1,24 +1,55 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "id": 2,
-      "title": "json-server",
-      "author": "typicode"
-    }
+  "employees" : 
+  [
+      {
+          "id": "1",
+          "name": "Sarah Smuthers",
+          "departmentId": 1,
+          "computerId": 1 
+      },
+      {
+          "id": "2",
+          "name": "Rashan Hidalgo",
+          "departmentId": 3,
+          "computerId": 2
+      },
+      {
+          "id": "3",
+          "name": "Tilly Underwood",
+          "departmentId": 2,
+          "computerId": 3
+      }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
+"departments" : 
+[
+  {
+      "id": "1",
+      "name": "HR"
+  },
+  {
+      "id": "2",
+      "name": "Gaming"
+  },
+  {
+      "id": "3",
+      "name": "Design"
   }
+],
+"computers" : 
+[
+  {
+      "id": "1",
+      "model": "XPS 53"
+  },
+  {
+      "id": "2",
+      "model": "Mac Turbocharge 3000"
+  },
+  {
+      "id": "3",
+      "model": "Auto-Robo-4K-HP"
+  }
+]
 }
+  
+
