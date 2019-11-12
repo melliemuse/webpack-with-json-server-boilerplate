@@ -1,15 +1,7 @@
 const data = {
     getEmployeeData : () => {
-        return fetch("http://localhost:8088/employees")
+        return fetch("http://localhost:8088/employees?_expand=department&_expand=computer")
         .then(employee => employee.json())
-    },
-    getDepartmentData : () => {
-        return fetch("http://localhost:8088/departments")
-        .then(department => department.json())
-    },
-    getComputerData : () => {
-        return fetch("http://localhost:8088/computers")
-        .then(computer => computer.json())
     }
 }
 

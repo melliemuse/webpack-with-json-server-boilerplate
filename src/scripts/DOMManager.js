@@ -1,11 +1,14 @@
 import htmlMaker from "./HTMLMaker.js"
 
-const displayInformationOnDOM = (employee, department, computer) => {
-    console.log(employee, department, computer)
-    .forEach( (singleInfo) => {
-        console.log(singleInfo)
-        return htmlMaker(singleInfo)
-    })
+const displayInformationOnDOM = (data) => {
+    let buildHTML = ""
+    const contentContainer = document.querySelector("#container")
+     data.forEach( (singleData) => {
+        console.log(htmlMaker(singleData))
+        return buildHTML += htmlMaker(singleData)
+    }
+    )
+    contentContainer.innerHTML = buildHTML
 }
 
 export default displayInformationOnDOM

@@ -1,16 +1,16 @@
-const htmlMaker = (employee, department, computer) => {
-    console.log(employee.name)
-    console.log(department.name)
-    console.log(computer.name)
+const htmlMaker = (data) => {
+    console.log(data.name)
+    console.log(data.department.name)
+    console.log(data.computer.model)
     return `<article class="employee">
         <header class="employee__name">
-            <h1>${employee.name}</h1>
+            <h1>${data.name}</h1>
         </header>
         <section class="employee__department">
-            Works in the ${department.name} department
+            Works in the ${data.department.name} department
         </section>
         <section class="employee__computer">
-            Currently using a ${computer.name}
+            Currently using a ${data.computer.model}
         </section>
     </article>`
 }
